@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./libs/tween.umd.js"></script>
+    <script src="./libs/three.js"></script>
+    <script src="./Field.js"></script>
+    <script src="./Pionek.js"></script>
+    <script src="./Game.js"></script>
+    <script src="./Ui.js"></script>
+    <script src="./Net.js"></script>
+    <script src="./Main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="status"><h3>STATUS <br><span id="status"></span><br><span id="status2"></span></h3></div>
+    <div id="loginDiv" class="login ">
+        <h1>LOGOWANIE</h1>
+        <div class=" w-50 column">
+            <input type="text" name="login" id="login">
+            <button type="submit" onclick="ui.attempLoginUi()">Loguj</button>
+            <button type="submit" onclick="net.reset()">Reset</button>
+        </div>
+    </div>
+    <div id="overlay" class="overlay"></div>
+    <div class="gameStatus" id="gameStatus"></div>
+    <div id="root">
+    </div>
+    <div id="enemyTurnTimer"><p>Ruch ma przeciwnik: </p><p id="timer">30</p></div>
+    <div id="myTurnTimer"><p id="myTimer">30</p></div>
+    <div id="loser" class="score">PRZEGRANA!</div>
+    <div id="winner" class="score">WYGRANA</div>
+</body>
+</html>
